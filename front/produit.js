@@ -6,7 +6,7 @@ fetch("http://localhost:3000/api/teddies")
 
 function teddy(teddies){
     console.log(teddies)
-    const teddyDiv = document.getElementById("teddy")
+    const teddyDiv = document.getElementById("ours")
     teddies.forEach(element => {
         const article = document.createElement("article")
         const paragraphe = document.createElement("p")
@@ -14,7 +14,7 @@ function teddy(teddies){
         image.classList.add("image")
         const url = window.location;
         const urlObject = new URL("http://localhost:3000/images/teddy_1.jpg");
-        const id = urlObject.searchParams.get("id");
+        const id = urlObject.searchParams.get("id");        
         const prix = document.createElement("p")
         const bouton = document.createElement("button")
         const lien = document.createElement("a")
