@@ -1,33 +1,28 @@
-fetch("http://localhost:3000/api/teddies")
+const url = window.location.search;
+const urlObject = new URLSearchParams(url);
+const id = urlObject.get("id");
+console.log(id)
+
+
+fetch("http://localhost:3000/api/teddies/" + id)
 .then(reponse => reponse.json())
 .then(reponse => {
     teddy(reponse)
 })
 
-function teddy(teddies){
-    console.log(teddies)
+function teddy(element){    
     const teddyDiv = document.getElementById("ours")
-    teddies.forEach(element => {
-        const article = document.createElement("article")
-        const paragraphe = document.createElement("p")
-        const image = document.createElement("img")
-        image.classList.add("image")
-        const url = window.location;
-        const urlObject = new URL("http://localhost:3000/images/teddy_1.jpg");
-        const id = urlObject.searchParams.get("id");        
-        const prix = document.createElement("p")
-        const bouton = document.createElement("button")
-        const lien = document.createElement("a")
-        lien.textContent = "ajouter au panier"
-        lien.href = "produit.html?id="+element._id
-        paragraphe.textContent = element.name
-        image.src = element.imageUrl
-        prix.textContent = element.price
-        bouton.appendChild(lien)        
-        article.appendChild(paragraphe)
-        article.appendChild(image)
-        article.appendChild(prix)
-        article.appendChild(bouton) 
-        teddyDiv.appendChild(article)
-    });
+    const article = document.createElement("article")
+    const paragraphe = document.createElement("p")
+    const image = document.createElement("img")
+    image.classList.add("image")                   
+    const prix = document.createElement("p")       
+    paragraphe.textContent = element.name
+    image.src = element.imageUrl
+    prix.textContent = element.price              
+    article.appendChild(paragraphe)
+    article.appendChild(image)
+    article.appendChild(prix)         
+    teddyDiv.appendChild(article)
+
 }

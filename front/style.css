@@ -39,6 +39,13 @@ header{
 .logo img{
     width:40%;
 }
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+}
 
 
 
