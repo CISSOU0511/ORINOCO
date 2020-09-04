@@ -2,13 +2,18 @@
     font-family: "belligerent";
     src: url("Belligerent-Madness/belligerent.ttf");
 }
-body{
+#bloc{
     background-color:#F3EBF3;
+    border: 2px solid;
 }
 img{
     width:30%;
     display: flex;
-    align-content: center;    
+    align-content: center;
+    border: 2px solid;    
+}
+.logo img{
+    border:none;
 }
 p{
     display: flex;
@@ -34,7 +39,7 @@ header{
     display:flex; 
     align-items:center;   
     width:40%;
-    justify-content: center;
+    justify-content: center;    
 }
 .logo img{
     width:40%;
@@ -44,9 +49,26 @@ article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid;
 }
-
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;    
+    background-color:#F3EBF3;
+    border: 2px solid;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 100px;
+}
+h1{
+    margin-left:50px;    
+    font-size:30px;
+}
+h2{
+    font-size: 30px;
+    margin-right: 50px;
+}
 
 
 

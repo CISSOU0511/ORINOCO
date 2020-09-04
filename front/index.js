@@ -11,10 +11,7 @@ function teddy(teddies){
         const article = document.createElement("article")
         const paragraphe = document.createElement("p")
         const image = document.createElement("img")
-        image.classList.add("image")
-        const url = window.location;
-        const urlObject = new URL("http://localhost:3000/images/teddy_1.jpg");
-        const id = urlObject.searchParams.get("id");
+        image.classList.add("image")        
         const prix = document.createElement("p")
         const bouton = document.createElement("button")
         const lien = document.createElement("a")
