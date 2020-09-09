@@ -16,7 +16,7 @@ function teddy(element){
     const paragraphe = document.createElement("p")
     const image = document.createElement("img")
     image.classList.add("image")                   
-    const prix = document.createElement("p")       
+    const prix = document.createElement("p") 
     paragraphe.textContent = element.name
     image.src = element.imageUrl
     prix.textContent = element.price              
