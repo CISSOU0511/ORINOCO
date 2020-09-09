@@ -4,6 +4,7 @@ const id = urlObject.get("id");
 console.log(id)
 
 
+
 fetch("http://localhost:3000/api/teddies/" + id)
 .then(reponse => reponse.json())
 .then(reponse => {
