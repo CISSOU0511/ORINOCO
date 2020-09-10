@@ -15,7 +15,7 @@ function teddy(teddies){
         const prix = document.createElement("p")
         const bouton = document.createElement("button")
         const lien = document.createElement("a")
-        lien.textContent = "ajouter au panier"
+        lien.textContent = "voir le produit"
         lien.href = "produit.html?id="+element._id
         paragraphe.textContent = element.name
         image.src = element.imageUrl

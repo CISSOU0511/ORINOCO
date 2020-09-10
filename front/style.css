@@ -62,6 +62,9 @@ article{
 }
 button a{
     color:black;
+}
+button{
+    width:20%;
 }     
 .btn{
     font-size:20px;
