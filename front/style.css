@@ -65,6 +65,7 @@ button a{
 }
 button{
     width:20%;
+    color:green;
 }     
 .btn{
     font-size:20px;
@@ -74,6 +75,11 @@ button{
 }
 .subtotal p{
     font-size: 30px;
+}
+#bloc1{   
+    background-color:#F3EBF3;
+    border: 2px solid;
+    height: 100%;      
 }
 
 

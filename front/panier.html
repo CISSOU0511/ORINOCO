@@ -10,38 +10,47 @@
     <title>Panier</title>
     
 </head>
-<body>       
-   
-    <div class="dropdown">
-        <div id="cart">
-            <p><span id="in-cart-items-num">0</span> Articles</p>
+<body>          
+    <nav class="navbar navbar-expand-lg navbar-light bg">
+        <div class="logo"><img src="images/image_orinoco.png" alt="caddie"></div>
+        <a class="navbar-brand">Orinoco</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button> 
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Panier</button>            
+    </nav>
+    <div id="bloc1">          
+        <div class="dropdown">
+            <div id="cart">
+                <p><span id="in-cart-items-num">0</span> Articles</p>
+            </div>
+        
+            <ul id="cart-dropdown" hidden>
+                <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
+                <li class="go-to-cart hidden"><a href="/panier/">Voir le panier</a></li>
+            </ul>
         </div>
-    
-        <ul id="cart-dropdown" hidden>
-            <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
-            <li class="go-to-cart hidden"><a href="/panier/">Voir le panier</a></li>
-        </ul>
-    </div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Article</th>
-                <th>Prix</th>                
-            </tr>
-        </thead>
-        <tbody id="cart-tablebody">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Article</th>
+                    <th>Prix</th>                
+                </tr>
+            </thead>
+            <tbody id="cart-tablebody">
 
-        </tbody>
-    </table>
-    <div class="total">
-        <p>Total : <span id="total"></span>€</p>
-    </div>
-    <button id="confirm-command">Passer la commande</button>
+            </tbody>
+        </table>
+        <div class="total">
+            <p>Total : <span id="total"></span>€</p>
+        </div>
+        <button id="confirm-command">Passer la commande</button>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="panier.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="panier.js"></script>
+    </div>
 </body>
 </html>
 
