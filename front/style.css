@@ -8,7 +8,7 @@ body{
 }
 #bloc{
     background-color:#F3EBF3;
-    border: 2px solid;
+    border: 2px solid green;
 }
 .logo{
     display:flex; 
@@ -23,7 +23,7 @@ img{
     width:30%;
     display: flex;
     align-content: center;
-    border: 2px solid;    
+    border: 2px solid green;    
 }
 .logo img{
     border:none;
@@ -40,13 +40,17 @@ article{
     justify-content: center;
     align-items: center;
     margin-top:50px;
+    margin-bottom: 50px;
+}
+article p{
+    font-size:40px;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items:center;        
     background-color:#F3EBF3;
-    border: 2px solid;
+    border: 2px solid green;
     margin-bottom: 10px;
 }
 .navbar-brand{
@@ -61,12 +65,12 @@ article{
     align-items: center;
 }
 button a{
-    color:black;
+    color:green;
 }
 button{
     width:20%;
     color:green;
-}     
+}    
 .btn{
     font-size:20px;
 }
@@ -78,13 +82,13 @@ button{
 }
 #bloc1{   
     background-color:#F3EBF3;
-    border: 2px solid;
-    height: 100%;      
+    border: 2px solid green;           
 }
 form{
     margin-top:50px;
     margin-left:10px;
     margin-right:10px;
+    margin-bottom:20px;
 }
 #confirm-command{
     margin-left:10px;
@@ -99,6 +103,9 @@ form{
 th{
     font-family:belligerent;
     font-size:20px;
+}
+#inputPostal{
+    width:20%;
 }
 
 
