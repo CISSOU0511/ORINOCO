@@ -22,7 +22,7 @@
     <div id="bloc1">          
         <div class="dropdown">
             <div id="cart">
-                <p><span id="in-cart-items-num">0</span>&nbsp;&nbsp;&nbsp; Articles </p>                   
+                <p><span id="in-cart-items-num">0</span>&nbsp;&nbsp; Articles </p>                   
             </div>
         
             <ul id="cart-dropdown" hidden>
@@ -41,7 +41,7 @@
             </tbody>
         </table>
         <div class="total">
-            <p>Total : <span id="total"></span>€</p>
+            <p>Total :&nbsp;&nbsp; <span id="total"></span>€</p>
         </div>
         
 
@@ -58,7 +58,7 @@
             </div>
             <div class="form-group">
               <label for="adresse">Adresse</label>
-              <input pattern="[a-zA-Z][1,9]" type="text" class="form-control" id="adresse" placeholder="1234 Main St">
+              <input pattern="^([0-9a-z'àâéèêôùûçÀÂÉÈÔÙÛÇ\s-]{1,50})$" type="text" class="form-control" id="adresse" placeholder="1234 Main St">
             </div>            
             <div class="form-row">
               <div class="form-group col-md-6">

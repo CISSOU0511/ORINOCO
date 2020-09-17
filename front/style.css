@@ -44,6 +44,7 @@ article{
 }
 article p{
     font-size:40px;
+    padding-left:30px;
 }
 .navbar{
     display: flex;
@@ -107,5 +108,34 @@ th{
 #inputPostal{
     width:20%;
 }
+#bloc2{
+    background-color:#F3EBF3;
+    border: 2px solid green;
+}
+.commande{
+    display:flex;
+    justify-content: center;
+    font-family: belligerent;
+}
+.numero{
+    display:flex;   
+    font-family: belligerent;
+    padding-left: 20px;
+}
+.total1{
+    font-family: belligerent;
+    font-size:30px;
+    padding-left: 20px; 
+}
+tr{
+    font-family:belligerent;
+    font-size:25px; 
+}
+label{
+    font-family:belligerent;
+    font-size:25px;
+}
+
+
 
 
