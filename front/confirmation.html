@@ -16,17 +16,22 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button> 
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Panier</button>            
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="panier.html">Panier</a></button>           
     </nav>
     <div id="bloc2">
-        <a href="panier.html"></a>
-        <div class="commande"><h1>Merci pour votre commande</h1></div>
-        <div class="numero"><h2>N° de commande :</h2></div>
-        <div class="total1">
-            <h3>Total : <span class="total1"></span>&nbsp;€</h3>            
+        
+        <div id="commande">
+            <h1>Merci pour votre commande</h1></div><br>
+        <div id="validation">
+            <h2>N° de commande :</h2></div><br>
+        <div id="total1">
+            <p>Total : <span class="total1"></span>&nbsp;€</p><br>            
         </div>
     </div>
-
-  <script src="confirmation.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <script src="confirmation.js"></script>  
 </body>
 </html>
