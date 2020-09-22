@@ -141,11 +141,14 @@ tr{
 }
 label{
     font-family:belligerent;
-    font-size:25px;
-    color:green;
+    font-size:25px;   
 }
 td{
     color:green;
+
+}
+#erreur_panier{
+    display:none;
 }
 
 

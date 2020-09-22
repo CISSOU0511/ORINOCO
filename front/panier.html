@@ -49,21 +49,21 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="prenom">Prénom</label>
-                <input pattern="[a-zA-Z]{3,}" type="text" class="form-control" id="prenom" placeholder="surname">
+                <input pattern="[a-zA-Z]{3,}" type="text" class="form-control" id="prenom" placeholder="prenom">
               </div>
               <div class="form-group col-md-6">
                 <label for="nom">Nom</label>
-                <input pattern="[a-zA-Z]{3,}" type="text" class="form-control" id="nom" placeholder="name">
+                <input pattern="[a-zA-Z]{3,}" type="text" class="form-control" id="nom" placeholder="nom">
               </div>
             </div>
             <div class="form-group">
               <label for="adresse">Adresse</label>
-              <input pattern="^([0-9a-z'àâéèêôùûçÀÂÉÈÔÙÛÇ\s-]{1,50})$" type="text" class="form-control" id="adresse" placeholder="1234 Main St">
+              <input pattern="^([0-9a-z'àâéèêôùûçÀÂÉÈÔÙÛÇ\s-]{1,50})$" type="text" class="form-control" id="adresse" placeholder="adresse">
             </div>            
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="ville">Ville</label>
-                <input pattern="[a-zA-Z]{3,}" type="text" class="form-control" id="ville" placeholder="town">
+                <input pattern="[a-zA-Z]{3,}" type="text" class="form-control" id="ville" placeholder="ville">
               </div> 
               <div class="form-group col-md-6">
                 <label for="email">Email</label>
@@ -72,12 +72,16 @@
             </div>
             <button type="submit" class="btn btn-outline-success">Valider</button>
           </form>
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <script src="panier.js"></script>
+       
     </div>
+    <div id="erreur_panier">
+        <h2>Votre panier est vide</h2>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="panier.js"></script>
 </body>
 </html>
 

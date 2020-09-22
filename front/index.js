@@ -1,12 +1,17 @@
+const teddyDiv = document.getElementById("teddy")
+
+
 fetch("http://localhost:3000/api/teddies")
 .then(reponse => reponse.json())
 .then(reponse => {
     teddy(reponse)
 })
-
+.catch(erreur=>{
+    teddyDiv.innerHTML = "<h2>il y a eu un problème veuillez réessayer plus tard</h2>"
+})
 function teddy(teddies){
     console.log(teddies)
-    const teddyDiv = document.getElementById("teddy")
+    
     teddies.forEach(element => {
         const article = document.createElement("article")
         const paragraphe = document.createElement("p")

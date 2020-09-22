@@ -1,5 +1,15 @@
 const panier = JSON.parse(localStorage.getItem("panier"))
-document.getElementById("in-cart-items-num").textContent = panier.length
+if (panier == null ||panier.length <=0) {
+    document.getElementById("bloc1").style.display = "none"
+    document.getElementById("erreur_panier").style.display = "block"
+} else {
+    document.getElementById("erreur_panier").style.display = "none"
+    afficherpanier() 
+}
+
+
+function afficherpanier(){
+    document.getElementById("in-cart-items-num").textContent = panier.length
 const tbody = document.getElementById("cart-tablebody")
 let total = 0
 let produit = []
@@ -44,7 +54,8 @@ form.addEventListener("submit",function(event){
     .then(reponse => reponse.json())
     .then(reponse => {
         console.log(reponse)
-        window.location.href = "confirmation.html?orderId=" + reponse.orderId
+        window.location.href = "confirmation.html?orderId=" + reponse.orderId + "&total="+total
     })
 
 })
+}
