@@ -7,7 +7,7 @@ fetch("http://localhost:3000/api/teddies")
     teddy(reponse)
 })
 .catch(erreur=>{
-    teddyDiv.innerHTML = "<h2>il y a eu un problème veuillez réessayer plus tard</h2>"
+    teddyDiv.innerHTML = "<h2>Oups le serveur ne répond pas veuillez réessayer plus tard</h2>"
 })
 function teddy(teddies){
     console.log(teddies)
