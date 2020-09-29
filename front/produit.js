@@ -9,16 +9,19 @@ if(!localStorage.getItem("panier")){
     localStorage.setItem("panier", JSON.stringify([]))
 }
 
-
+const teddyDiv = document.getElementById("ours")
 
 fetch("http://localhost:3000/api/teddies/" + id)
 .then(reponse => reponse.json())
 .then(reponse => {
     teddy(reponse)
 })
+.catch(erreur=>{
+    teddyDiv.innerHTML = "<h2>Oups le serveur ne répond pas veuillez réessayer plus tard</h2>"
+})
 
 function teddy(element){    
-    const teddyDiv = document.getElementById("ours")
+    
     const article = document.createElement("article")
     const paragraphe = document.createElement("p")
     const description = document.createElement("p")
