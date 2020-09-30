@@ -150,6 +150,47 @@ td{
 #erreur_panier{
     display:none;
 }
+@media all and (max-width:660px){
+    body{
+        margin-top: 20px;
+        margin-bottom:20px;
+    }
+    .logo{
+        display:flex;
+        width:35%;       
+    }
+    .navbar-brand{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        font-size:50px;
+    }
+    .navbar{
+        display:flex;
+        justify-content: center;            
+    }
+    .btn{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:25%;
+    }
+    button{
+        width:50%;    
+    } 
+    .image{
+        width:50%;
+    }
+    #validation h2{
+        display: flex;
+        flex-direction: column;
+        font-size:25px;
+    } 
+    #commande h1{
+        font-size:25px;
+    }  
+}
+
 
 
 
