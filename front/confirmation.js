@@ -9,4 +9,3 @@ document.getElementById("total2").textContent = total
 
 
 
-    
